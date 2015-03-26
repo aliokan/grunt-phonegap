@@ -1,5 +1,5 @@
 (function() {
-  var async, _;
+  var _, async;
 
   _ = require('lodash');
 
@@ -28,7 +28,7 @@
       releaseName: function() {
         var pkg;
         pkg = grunt.file.readJSON('package.json');
-        return "" + pkg.name + "-" + pkg.version;
+        return pkg.name + "-" + pkg.version;
       },
       key: {
         store: 'release.keystore',

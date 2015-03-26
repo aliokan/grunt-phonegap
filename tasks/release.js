@@ -7,7 +7,7 @@
     return {
       on: function(platform, fn) {
         var releaseAdapter;
-        releaseAdapter = path.join(__dirname, 'release', "" + platform + ".js");
+        releaseAdapter = path.join(__dirname, 'release', platform + ".js");
         if (grunt.file.exists(releaseAdapter)) {
           return require(releaseAdapter)(grunt).release(fn);
         } else {

@@ -7,7 +7,7 @@
     return {
       on: function(platform, fn) {
         var debugAdapter;
-        debugAdapter = path.join(__dirname, 'debug', "" + platform + ".js");
+        debugAdapter = path.join(__dirname, 'debug', platform + ".js");
         if (grunt.file.exists(debugAdapter)) {
           return require(debugAdapter)(grunt).debug(fn);
         } else {
