@@ -1,5 +1,5 @@
 (function() {
-  var _, createTree, path;
+  var createTree, path, _;
 
   path = require('path');
 

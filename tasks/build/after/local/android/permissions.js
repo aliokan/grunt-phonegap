@@ -1,5 +1,5 @@
 (function() {
-  var _, path, permissions, xmldom;
+  var path, permissions, xmldom, _;
 
   _ = require('lodash');
 

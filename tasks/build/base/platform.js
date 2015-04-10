@@ -16,7 +16,7 @@
     };
     runAfter = function(provider, platform, fn) {
       var adapter;
-      adapter = path.join(__dirname, '..', 'after', provider, platform + ".js");
+      adapter = path.join(__dirname, '..', 'after', provider, "" + platform + ".js");
       if (grunt.file.exists(adapter)) {
         return require(adapter)(grunt).run(fn);
       } else {

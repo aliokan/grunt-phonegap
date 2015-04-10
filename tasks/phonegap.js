@@ -1,5 +1,5 @@
 (function() {
-  var _, async;
+  var async, _;
 
   _ = require('lodash');
 
@@ -8,7 +8,7 @@
   module.exports = function(grunt) {
     var defaults;
     defaults = {
-      cli: 'phonegap local',
+      cli: 'phonegap',
       root: 'www',
       config: 'www/config.xml',
       configXml: 'www/config.xml',
@@ -28,7 +28,7 @@
       releaseName: function() {
         var pkg;
         pkg = grunt.file.readJSON('package.json');
-        return pkg.name + "-" + pkg.version;
+        return "" + pkg.name + "-" + pkg.version;
       },
       key: {
         store: 'release.keystore',
